@@ -1,0 +1,23 @@
+<div class="container">
+  <h1 class="display-4">Listado de Ofertas de Empleo</h1>
+  <!-- Botón para cerrar sesión, visible solo si el usuario está logueado -->
+  <button *ngIf="authService.isAuthenticatedUser()" (click)="cerrarSesion()" class="btn btn-danger btn-cerrar-sesion">Cerrar Sesión</button>
+  <table class="table table-bordered">
+    <thead class="thead-light">
+      <tr>
+        <th>Título</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let oferta of ofertas">
+        <td>{{ oferta.titulo }}</td>
+        <td>
+          <a [routerLink]="'/oferta/' + oferta.id" class="btn btn-primary">Ver</a>
+          <button *ngIf="authService.isAuthenticatedUser()" (click)="eliminarOferta(oferta.id)" class="btn btn-danger">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <a *ngIf="authService.isAuthenticatedUser()" routerLink="/crear-oferta" class="btn btn-success">Crear Nueva Oferta</a>
+</div>

@@ -1,0 +1,32 @@
+
+h1.display-4 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.error {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.btn-primary {
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.form-check-label {
+  margin-left: 10px;
+}

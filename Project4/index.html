@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Subscripcion a revista</title>
+        <link rel="stylesheet" href="style.css">
+    </head>      
+    <body>  
+        <div class=header>>
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <nav>
+                <hr>
+                <a href="#"><strong>HOME</strong></a>
+                <a href="#"><strong>CASAS</strong></a>
+                <a href="#"><strong>lIVING</strong></a>
+                <a href="#"><strong>SOLUCIONES</strong></a>
+                <a href="#"><strong>CONTACTOS</strong></a>
+                <a href="#"><strong>SUBSCRIPCIONES Y TIENDA ONLINE</strong></a>
+                <hr>
+            </nav>
+        </div>
+        <div class="contenedor">
+
+            <div class="mitad">
+                <form method="post" action=http://www.cursos-diseno.es/mi-mail.php>
+                    <table>
+                        <h3><strong>Datos de subscripcion</strong></h3>
+                        <p class="centradoinput">*Campos obligatorios</p>
+                        <tr>
+                            <td class="derecha">Nombre*</td>
+                            <td><input type="text" name="nombre" class="grande" required></td>
+                        </tr>
+                        <tr>
+                            <td class="derecha">Apellidos*</td>
+                            <td><input type="text" name="apellidos" class="grande" required></td>
+                        </tr>
+                        <tr>
+                            <td class="derecha">Dirección*</td>
+                            <td><input type="text" name="direccion" placeholder="Calle, nº, piso..." class="grande" required></td>
+                        </tr>
+                        <tr>
+                            <td class="derecha">Codigo Postal*</td>
+                            <td><input type="number" name="codigopostal" class="pequeno" required></td>
+                        </tr>
+                        <tr>
+                            <td class="derecha">Ciudad*</td>
+                            <td><input type="text" name="ciudad" class="pequeno" required></td>
+                        </tr>
+                        <tr>
+                            <td class="derecha">Provincia*</td>
+                            <td>
+                                <select required name="provincia" class="mini">
+                                    <option value="Madrid">Madrid</option>
+                                    <option value="Barcelona">Barcelona</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="derecha">Telefono*</td>
+                            <td><input type="number" name="telefono" placeholder="+34 123 456 789" class="pequeno" required></td>
+                        </tr>
+
+                    </table>
+                    <table class="table-inferior">
+                        <h3><strong>Datos de usuario</strong></h3>
+                        <tr>
+                            <td class="derecha">Direccion de correo electronico*</td>
+                            <td><input type="email" name="email" class="grande" required></td>
+                        </tr>
+                        <tr>
+                            <td class="derecha">Contraseña*</td>
+                            <td><input type="password" name="contrasena" class="pequeno" required></td>
+                        </tr>
+                        <tr>
+                            <td class="derecha">Confirmacion de la contraseña*</td>
+                            <td><input type="password" name="confirmacioncontrasena" class="pequeno" required></td>
+                        </tr>
+                        <tr class="centradoinput">
+                            <td><input type="checkbox" name="aceptado" required>
+                                Acepto las <u>condiciones</u> *</td>
+                        </tr>
+                        <tr>
+                            <td><input type="hidden" name="destinatario" value=joaquin_romero_m-tsapp1oa2223@cev.com></td>
+                            <td><input class="boton" type="submit" value="Subscribirme"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="mitad">
+                <img src="revista.jpg">
+            </div>
+        </div>
+
+        <div class=footer>
+            <nav>
+                <a href="#">Contacto</a>
+                <a href="#">Condiciones Generales</a>
+                <a href="#">Condiciones y gastos de envio</a>
+                <a href="#">Politica de  privacidad</a>
+                <a href="#">Informacion de contacto</a>
+            </nav>
+        </div>
+    </body>
+</html>

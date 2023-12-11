@@ -1,0 +1,18 @@
+<div class="container">
+  <h1 class="display-4">Ofertas de Empleo Disponibles</h1>
+  <a routerLink="/login" class="btn btn-iniciar-sesion">Iniciar Sesión</a>
+  <table class="table table-bordered">
+    <thead class="thead-light">
+      <tr>
+        <th>Título</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let oferta of ofertas">
+        <td>
+          <a [routerLink]="['/oferta', oferta.id]">{{ oferta.titulo }}</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

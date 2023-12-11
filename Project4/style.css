@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+    --roboto: 'Roboto', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--roboto);
+    background-color: #Edeff0;
+}
+.logo{
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
+hr{
+    padding: 10px 10px; 
+}
+nav a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    color: gray;
+}
+.logo img{
+    width: 20%;
+}
+.contenedor{
+    width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    float: right;
+    padding: 5%;
+}
+.contenedor img{
+    width: 70%;
+    margin-top: 45px;
+    margin-left: 35px;
+}
+table{
+    margin-left: 112px;
+}
+h3{
+    color: #044c85;
+}
+.table-inferior{
+    margin-left: 0px;
+}
+.derecha{
+    text-align: right;
+}
+.mitad{
+    float: left;
+    width: 50%;
+    padding: 20px;    
+}
+.mini{
+    width: 100px ;
+    padding: 5px;
+    border: none;
+    box-shadow: inset 0 0 3px #000000;
+}
+.pequeno{
+    width: 180px ;
+    padding: 5px;
+    border: none;
+    box-shadow: inset 0 0 3px #000000;
+}
+.grande{
+    width: 250px;
+    padding: 5px;
+    border: none;
+    box-shadow: inset 0 0 3px #000000;
+}
+.boton{
+    margin-top: 20px;
+    margin-left: 180px;
+    color: white;
+    background-color: #044c85;
+}
+.footer{
+    float: left;
+    width: 100%;
+    padding: 15px;    
+    background-color: #044c85;
+}
+.footer nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 20px;
+}
+.centradoinput{
+    padding-left: 220px;
+}

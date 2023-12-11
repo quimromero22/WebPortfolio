@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Iniciar Sesión</h2>
+  <form [formGroup]="loginForm">
+    <div class="form-group">
+      <label for="usuario">Correo Electrónico</label>
+      <input type="text" id="usuario" formControlName="usuario" class="form-control" placeholder="Correo Electrónico  " required>
+    </div>
+    
+    <div class="form-group">
+      <label for="contraseña">Contraseña</label>
+      <input type="password" id="contraseña" formControlName="contraseña" class="form-control" placeholder="Contraseña" required>
+    </div>
+
+    <div class="text-danger" *ngIf="credencialesIncorrectas">Credenciales incorrectas. Por favor, inténtalo de nuevo.</div>
+    
+    <button type="button" class="btn btn-primary" (click)="iniciarSesion()">Iniciar Sesión</button>
+    <button type="button" class="btn btn-link" (click)="irARegistro()">Registrarse</button>
+  </form>
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+  <h1 class="display-4">Detalles de la Oferta</h1>
+  <div *ngIf="oferta" class="card">
+    <div class="card-body">
+      <h2 class="card-title">{{ oferta.titulo }}</h2>
+      <p class="card-text"><strong>Descripción:</strong> {{ oferta.descripcion }}</p>
+      <p class="card-text"><strong>Empresa:</strong> {{ oferta.empresa }}</p>
+      <p class="card-text"><strong>Ciudad:</strong> {{ oferta.ciudad }}</p>
+      <p class="card-text"><strong>Salario:</strong> {{ oferta.salario }} €</p>
+      <p class="card-text"><strong>Email de Contacto:</strong> {{ oferta.email }}</p>
+
+      <!-- Botón para regresar a la lista de ofertas si se esta logueado-->
+      <a *ngIf="authService.isAuthenticatedUser()" routerLink="/ofertas" class="btn btn-primary">Regresar a la lista de ofertas</a>
+      
+      <!-- Botón para regresar a la página de inicio si no se está logueado -->
+      <a *ngIf="!authService.isAuthenticatedUser()" routerLink="/" class="btn btn-primary">Regresar a la página de inicio</a>
+    </div>
+  </div>
+  <div *ngIf="!oferta" class="alert alert-danger">
+    <p>La oferta no existe.</p>
+    <a routerLink="/" class="btn btn-primary">Regresar a la lista de ofertas</a>
+  </div>
+</div>

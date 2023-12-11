@@ -1,0 +1,43 @@
+<form [formGroup]="ofertaForm" (ngSubmit)="crearOferta()">
+  <div class="form-group">
+    <label for="titulo">Título</label>
+    <input type="text" id="titulo" formControlName="titulo" class="form-control">
+    <div class="error" *ngIf="ofertaForm.get('titulo')?.hasError('required') && ofertaForm.get('titulo')?.touched">El título es obligatorio.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="descripcion">Descripción</label>
+    <textarea id="descripcion" formControlName="descripcion" class="form-control"></textarea>
+    <div class="error" *ngIf="ofertaForm.get('descripcion')?.hasError('required') && ofertaForm.get('descripcion')?.touched">La descripción es obligatoria.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="empresa">Empresa</label>
+    <input type="text" id="empresa" formControlName="empresa" class="form-control">
+    <div class="error" *ngIf="ofertaForm.get('empresa')?.hasError('required') && ofertaForm.get('empresa')?.touched">La empresa es obligatoria.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="salario">Salario</label>
+    <input type="text" id="salario" formControlName="salario" class="form-control">
+    <div class="error" *ngIf="ofertaForm.get('salario')?.hasError('required') && ofertaForm.get('salario')?.touched">El salario es obligatorio.</div>
+    <div class="error" *ngIf="ofertaForm.get('salario')?.hasError('pattern') && ofertaForm.get('salario')?.touched">El salario debe ser un número.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="ciudad">Ciudad</label>
+    <input type="text" id="ciudad" formControlName="ciudad" class="form-control">
+    <div class="error" *ngIf="ofertaForm.get('ciudad')?.hasError('required') && ofertaForm.get('ciudad')?.touched">La ciudad es obligatoria.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" formControlName="email" class="form-control">
+    <div class="error" *ngIf="ofertaForm.get('email')?.hasError('required') && ofertaForm.get('email')?.touched">El email es obligatorio.</div>
+    <div class="error" *ngIf="ofertaForm.get('email')?.hasError('email') && ofertaForm.get('email')?.touched">El email debe ser válido.</div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Crear Oferta</button>
+</form>
+
+<div class="error-message" *ngIf="errorMensaje">{{ errorMensaje }}</div>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/*ROOT Selector*/
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+    --black: #000;
+    --white: #fff;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+}
+/*FUENTES*/
+.poppins-32-700 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--poppins);
+}
+.poppins-32-600 {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: var(--poppins);
+}
+.poppins-24-600 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--poppins);
+}
+.poppins-18 {
+    font-size: 16px;
+    font-family: var(--poppins);
+}
+.poppins-14 {
+    font-size: 14px;
+    font-family: var(--poppins);
+}
+/*NAVBAR*/
+.nav {
+    background-color: #000000;
+    opacity: 0.8;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.nav .nav-item .nav-link {
+    color: var(--white);
+    font-weight: 300;
+    padding: 0px;
+    margin: 0px 32px;
+    font-family: var(--roboto);
+}
+.nav .nav-item .nav-link:hover {
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+/*IMAGEN SUPERIOR INFERIOR*/
+.superior-img {
+    background-image: url('inferior.jpg');
+    height: 240px;
+    width: 100%;
+}
+.inferior-img {
+    background-image: url('inferior.jpg');
+    height: 240px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    margin-top: -142px;
+}
+/*CONTENIDO PAGINA*/
+.margin-content {
+    background-color: var(--white);
+    margin-top: -112px;
+    max-width: 822px;
+}
+/*FOOTER*/
+.footer-black {
+    background-color: var(--black);
+}
+.footer-width {
+    max-width: 822px;
+}
+.footer-font {
+    font-family: var(--poppins);
+    color: var(--white);
+    font-size: 14px;
+}
+/*CONTACTANOS*/
+.icon-redessociales {
+    display: block;
+    height: 72px;
+    width: 72px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    text-decoration: none;
+    margin: 0 auto;
+}
+.fondo-gris {
+    background-color: grey;
+}
+.input-contacto input {
+    width: 100%;
+    height: 36px;
+    font-family: var(--poppins);
+    border: none;
+    padding-left: 12px;
+    outline: none;
+}
+.input-contacto textarea {
+    width: 100%;
+    font-family: var(--poppins);
+    border: none;
+    padding-left: 12px;
+    outline: none;
+}
+.boton-enviar button {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--poppins);
+    outline: none;
+    border: 2px solid var(--white);
+    padding: 10px 32px;
+}
